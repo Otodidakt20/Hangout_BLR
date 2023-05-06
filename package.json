@@ -1,0 +1,19 @@
+{
+  "name": "hangout_blr",
+  "version": "1.0.0",
+  "description": "a platform to find places for hangout in blr ",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Otodidakt20/Hangout_BLR.git"
+  },
+  "author": "Anishi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Otodidakt20/Hangout_BLR/issues"
+  },
+  "homepage": "https://github.com/Otodidakt20/Hangout_BLR#readme"
+}
