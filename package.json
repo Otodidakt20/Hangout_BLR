@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Otodidakt20/Hangout_BLR/issues"
   },
-  "homepage": "https://github.com/Otodidakt20/Hangout_BLR#readme"
+  "homepage": "https://github.com/Otodidakt20/Hangout_BLR#readme",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "express": "^4.18.2"
+  }
 }
