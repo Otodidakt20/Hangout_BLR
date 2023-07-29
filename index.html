@@ -1,18 +1,59 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Geocoding API Demo</title>
-  </head>
-  <body>
-    <h1>Hangout BLR</h1>
-    <form action="/geocode" method="POST">
-      <input
-        type="text"
-        name="address"
-        placeholder="Enter an address"
-        required
-      />
-      <button type="submit">Submit</button>
-    </form>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangout_BLR</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+<body>
+    <form title="addres 1"></form>
+
+
+
+</body>
+
+<script>
+    geocode()
+function geocode(){
+    var location1="dayanad sagar college of enginnering"
+    var location2="the hub, safina plaza"
+    axios.get('https://maps.googleapis.com/maps/api/geocode/json',{
+        params: {
+            address: location1,
+            key : 'AIzaSyBbxSPOwU2XDitmol2L2yEWu3fhXq11eH4'
+        }
+    }).then(function(response){
+
+        console.log(response)
+        
+        console.log(response.data.results[0].geometry.location)
+        var Loc =response.data.results[0].geometry.location
+        
+        
+    }).catch(function(error){
+        console.log(error)
+    })
+
+    axios.get('https://maps.googleapis.com/maps/api/geocode/json',{
+        params: {
+            address: location2,
+            key : 'AIzaSyBbxSPOwU2XDitmol2L2yEWu3fhXq11eH4'
+        }
+    }).then(function(response){
+
+        console.log(response)
+        
+        console.log(response.data.results[0].geometry.location)
+        var Loc2=response.data.results[0].geometry.location
+    }).catch(function(error){
+        console.log(error)
+    })
+    
+    
+
+    
+}
+</script>
 </html>
